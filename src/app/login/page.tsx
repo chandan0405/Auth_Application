@@ -14,7 +14,6 @@ export default function LoginPage() {
   });
   const onLogin = async () => {
     try {
-      
       const response= await axios.post("/api/login/", user);
       console.log("Login Successful", response.data);
       toast.success("Login Successful")
